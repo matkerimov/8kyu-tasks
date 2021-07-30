@@ -349,37 +349,131 @@
 // console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]))
 // ---------------------------------------------------------------------
 
-//-task24 | Powers of 2
+//task24 | Powers of 2
 // Complete the function that takes a non-negative integer n as input,
 // and returns a list of all the powers of 2 with the exponent ranging from 0 to n (inclusive).
 // -----------------------------------------------------------------------
 // function powersOfTwo(n){
-//     let arr = String(n).split('')
-//     return arr.reduce((acc, item) => {
-//         Math.pow(2, item)
-//     }, [])
+//     let array = []
+//     for (let i = 0; i <= n; i++){
+//         array.push(Math.pow(2, i))
+//     }
+//     return array
 // }
-// console.log(powersOfTwo(1))
+//
+// console.log(powersOfTwo( 4))
 // -----------------------------------------------------------------------
 
 // -task25 | Grasshopper - Personalized Message
 // Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 //     Use conditionals to return the proper message:
 // ----------------------------------------------------------------------
-// function greet (name, owner) { return (name === 'Zhaiyl') ? 'Hello boss' : 'Hello guest' }
-// console.log(greet('Daniel', 'Daniel'))
-// console.log(greet('Daniel', 'Zhaiyl'))
+// function greet (name, owner) {
+//     if ( name === owner){
+//         return 	'Hello boss'
+//     }
+//     return 	'Hello guest'
+// }
+// function greet ( name, owner) { return (name === owner ? 'Hello boss':'Hello guest' )}
+// console.log(greet('Zhaiyl', 'Zhaiyl'))
+// console.log(greet('beko', 'beka'))
 // ----------------------------------------------------------------------
 
+// task26 | Opposites Attract
+// Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each.
+// If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+// Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+// ---------------------------------------------------------------------------
+// function lovefunc(flower1, flower2){
+//     if ( flower1 % 2 === 0 && flower2 % 2 !==0 || flower1 % 2 !== 0 && flower2 % 2 ===0 ){
+//         return true
+//     }
+//     return false
+// }
+// function lovefunc(flower1, flower2) { return (flower1 % 2 !== 0 && flower2 % 2 === 0|| flower1 % 2 !== 0 && flower2 % 2 ===0) ? true : false}
+// console.log(lovefunc(1,  4))
+// console.log(lovefunc(2,  2))
+// console.log(lovefunc(0,  1))
+// console.log(lovefunc(0,  0))
+// console.log(lovefunc(872,  149))
+// ---------------------------------------------------------------------------
 
+// task27 | Keep Hydrated!
+// Nathan loves cycling.
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+// --------------------------------------------------------------------------
+// function litres(time) {
+//     return Math.floor(time * 0.5)
+// }
+// console.log(litres(2))    // 'should return 1 litre'
+// console.log(litres(1.4))   // 'should return 0 litres'
+// console.log(litres(12.3)) // 'should return 6 litres'
+// console.log(litres(0.82))  // 'should return 0 litres'
+// console.log(litres(11.8))  // 'should return 5 litres'
+// console.log(litres(1787))  // 'should return 893 litres'
+// console.log(litres(0))  // 'should return 0 litres'
+// --------------------------------------------------------------------------
 
+// task28 | Alan Partridge II - Apple Turnover
+// Alan is known for referring to the temperature of the apple turnover as 'Hotter than the sun!'.
+// According to space.com the temperature of the sun's corona is 2,000,000 degrees C, but we will ignore the science for now.
+// Your job is simple, if (x) squared is more than 1000, return 'It's hotter than the sun!!',
+// else, return 'Help yourself to a honeycomb Yorkie for the glovebox.'.
+// X will be a valid integer number.
+//     X will be either a number or a string. Both are valid.
+// ---------------------------------------------------------------------------
+// function apple(x) {
+//     if (Number(x * x > 1000)) {
+//         return 'It\'s hotter than the sun!!'         // чтобы использовать каычки внутри кавычек нужно вот это  { \ }
+//     }
+//     return 'Help yourself to a honeycomb Yorkie for the glovebox.'
+// }
+// console.log(apple('50'))
+// console.log(apple(4))
 
+// task29 | Convert boolean values to strings 'Yes' or 'No'.
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+// ---------------------------------------------------------------------------
+// function boolToWord( bool ){
+//     return bool ? 'Yes' : 'No'
+// }
+// function boolToWord( bool ) { return bool ? 'Yes' : 'No'}
+// console.log(boolToWord(true))
+// console.log(boolToWord(false))
+// ---------------------------------------------------------------------------
 
+// task30 | How many lightsabers do you own?
+// Inspired by the development team at Vooza, write the function that accepts the name of a programmer, and
+// returns the number of lightsabers owned by that person.
+// The only person who owns lightsabers is Zach, by the way. He owns 18, which is an awesome number of lightsabers. Anyone else owns 0.
+// Note: your function should have a default parameter.
+// ---------------------------------------------------------------------------
+// function howManyLightsabersDoYouOwn(name) {
+//     return (name === "Zach") ? 18 : 0
+// }
+// const howManyLightsabersDoYouOwn = name => name === 'Zach' ? 18 : 0;
+// console.log(howManyLightsabersDoYouOwn("Adam"))
+// console.log(howManyLightsabersDoYouOwn("Zach"))
+// ---------------------------------------------------------------------------
 
-
-
-
-
+// task31 | Area or Perimeter
+// You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+//     If it is a square, return its area. If it is a rectangle, return its perimeter.
+//
+// area_or_perimeter(6, 10) --> 32
+// area_or_perimeter(3, 3) --> 9
+// ---------------------------------------------------------------------------
+// const areaOrPerimeter = function(l , w) {
+//     if (l === w ){
+//         return l * w
+//     }
+//     return (l + w) * 2
+// }
+// const areaOrPerimeter = function(l , w) { return (l === w ) ? l * w : (l + w) * 2}
+// console.log(areaOrPerimeter(4, 4))
+// console.log(areaOrPerimeter(6, 10))
+// ---------------------------------------------------------------------------
 
 
 
