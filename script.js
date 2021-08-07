@@ -494,9 +494,29 @@
 // Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not. The input values are always positive.
 // ---------------------------------------------------------------------------
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    
-}
 
+}
+// ---------------------------------------------------------------------------
+
+// task34 | Enumerable Magic #25 - Take the First N Elements
+// Create a method take that accepts a list/array and a number n, and returns a list/array array
+// of the first n elements from the list/array. If you need help, here's a reference:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+// ---------------------------------------------------------------------------
+function take(arr, n) {
+    // Your code here
+}
+// ---------------------------------------------------------------------------
+
+// task35 | Twice as old
+// Your function takes two arguments: current father's age (years)
+// current age of his son (years)
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+// ---------------------------------------------------------------------------
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    // your code here
+}
+// ---------------------------------------------------------------------------
 
 
 
