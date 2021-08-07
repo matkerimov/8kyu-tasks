@@ -364,7 +364,7 @@
 // console.log(powersOfTwo( 4))
 // -----------------------------------------------------------------------
 
-// -task25 | Grasshopper - Personalized Message
+// task25 | Grasshopper - Personalized Message
 // Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 //     Use conditionals to return the proper message:
 // ----------------------------------------------------------------------
@@ -474,6 +474,28 @@
 // console.log(areaOrPerimeter(4, 4))
 // console.log(areaOrPerimeter(6, 10))
 // ---------------------------------------------------------------------------
+
+// DON`T UNDERSTAND task32 | Geometry Basics: Distance between points in 2D
+// This series of katas will introduce you to basics of doing geometry with computers.
+// Point objects have x and y attributes (X and Y in C#) attributes.
+// Write a function calculating distance between Point a and Point b.
+// Tests round answers to 6 decimal places.
+// ---------------------------------------------------------------------------
+// function distanceBetweenPoints(a, b) {
+//     return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+// }
+// console.log(distanceBetweenPoints((3, 3)(3,3) ))
+
+// task33 | Will you make it?
+// You were camping with your friends far away from home, but when it's time to go back,
+// you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average,
+// your car runs on about 25 miles per gallon. There are 2 gallons left.
+// Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+// Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not. The input values are always positive.
+// ---------------------------------------------------------------------------
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    
+}
 
 
 
