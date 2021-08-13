@@ -493,9 +493,13 @@
 // Considering these factors, write a function that tells you if it is possible to get to the pump or not.
 // Function should return true (1 in Prolog) if it is possible and false (0 in Prolog) if not. The input values are always positive.
 // ---------------------------------------------------------------------------
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-
-}
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     return mpg * fuelLeft >= distanceToPump
+//
+// }
+// console.log(zeroFuel(50, 25, 2))
+// console.log(zeroFuel(100, 50, 1))
+// console.log(zeroFuel(100, 50, -1))
 // ---------------------------------------------------------------------------
 
 // task34 | Enumerable Magic #25 - Take the First N Elements
@@ -510,15 +514,50 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 // console.log(take([0, 1, 2, 3, 5, 8, 13], 3))
 // ---------------------------------------------------------------------------
 
-// task35 | Twice as old
+// ---task35 | Twice as old
 // Your function takes two arguments: current father's age (years)
 // current age of his son (years)
 // Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
 // ---------------------------------------------------------------------------
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-    // your code here
+// function twiceAsOld(dad, son) {
+//  return Math.abs(dad - 2 * son)
+// }
+// console.log(twiceAsOld(36,7))
+ // ---------------------------------------------------------------------------
+
+// task36 | Abbreviate a Two Word Nam
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+//     The output should be two capital letters with a dot separating them.
+//     It should look like this:
+// Sam Harris => S.H
+// Patrick Feeney => P.F
+// // ---------------------------------------------------------------------------
+function abbrevName(name){
+
+    let one = name.split(" ").map(item => item.slice([0]))
+    // let two = name.split(" ").map(item => item.split("")[0])
+    return `${one}`
+
 }
-// ---------------------------------------------------------------------------
+console.log(abbrevName("Sam Harris"))
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------
 
 
 
