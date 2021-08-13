@@ -533,10 +533,12 @@
 // Patrick Feeney => P.F
 // // ---------------------------------------------------------------------------
 function abbrevName(name){
-
-    let one = name.split(" ").map(item => item.slice([0]))
+    let item = name.split(' ')
+    let elem = (item[0].charAt(0) + "." + item[1].charAt(0)).toUpperCase()
+    return elem
+    // let one = name.split(" ").map(item => item.split("")[0])
     // let two = name.split(" ").map(item => item.split("")[0])
-    return `${one}`
+    // return one
 
 }
 console.log(abbrevName("Sam Harris"))
